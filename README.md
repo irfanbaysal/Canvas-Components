@@ -5,8 +5,8 @@
    - Horizontal Layout Component
    - Canvas Component
    - Canvas Group Component
-   How To : 
-  - Just add component in your game object
+- How To : 
+   Just add component in your game object
  
  ## Vertical & Horizontal Layout Components
  
