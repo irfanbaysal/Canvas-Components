@@ -21,7 +21,8 @@ namespace Core.Scripts.UI
 
         private void OnValidate()
         {
-            SetDynamicUIMode(); 
+            SetDynamicUIMode();
+            gameObject.name = GetType().Name;
         }
 
         protected override void Awake()
