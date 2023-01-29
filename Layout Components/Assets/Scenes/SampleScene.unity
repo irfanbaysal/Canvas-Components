@@ -200,12 +200,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 466680118}
+  - component: {fileID: 466680120}
+  - component: {fileID: 466680119}
   - component: {fileID: 466680117}
   - component: {fileID: 466680116}
   - component: {fileID: 466680115}
-  - component: {fileID: 466680112}
-  - component: {fileID: 466680120}
-  - component: {fileID: 466680119}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -213,18 +212,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &466680112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 466680111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c49dccc29e974e4ca2c94971f9c7ccf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &466680115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -306,22 +293,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &466680119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 466680111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f246c85b4e8490bb69cc6b4fa94da3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties: 10
-  enableCanvasGroup: 1
-  alpha: 0.5
---- !u!225 &466680120
+--- !u!225 &466680119
 CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -333,6 +305,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &466680120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466680111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f246c85b4e8490bb69cc6b4fa94da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  properties: 0
+  enableCanvasGroup: 1
+  alpha: 0.5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

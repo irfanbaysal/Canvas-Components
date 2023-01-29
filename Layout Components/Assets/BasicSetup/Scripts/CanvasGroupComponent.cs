@@ -11,6 +11,7 @@ namespace Core.Scripts.UI
          IgnoreParent = 1 << 3,
      }
     [RequireComponent(typeof(CanvasGroup))]
+    [DisallowMultipleComponent]
     public class CanvasGroupComponent : UIBehaviour
     {
         [SerializeField] private CanvasGroupFlags properties;

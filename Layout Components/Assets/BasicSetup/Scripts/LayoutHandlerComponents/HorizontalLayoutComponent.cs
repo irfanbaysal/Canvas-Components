@@ -4,6 +4,7 @@ using UnityEngine.UI;
 namespace Core.Scripts.UI
 {
     [RequireComponent(typeof(HorizontalLayoutGroup))]
+    [DisallowMultipleComponent]
     public class HorizontalLayoutComponent : LayoutComponent
     {
         protected void OnValidate()

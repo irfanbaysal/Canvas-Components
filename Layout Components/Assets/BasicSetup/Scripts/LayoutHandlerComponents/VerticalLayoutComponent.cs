@@ -4,6 +4,7 @@ using UnityEngine.UI;
 namespace Core.Scripts.UI
 {
     [RequireComponent(typeof(VerticalLayoutGroup))]
+    [DisallowMultipleComponent]
     public class VerticalLayoutComponent : LayoutComponent
     {
         protected void OnValidate()
