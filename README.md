@@ -28,3 +28,12 @@ https://user-images.githubusercontent.com/43708297/215323549-6ff359ec-22d6-4fa5-
    
 https://user-images.githubusercontent.com/43708297/215329300-b589feb2-37ae-4272-b29c-c5245a3a530d.mov
 
+ ## Canvas Component
+   - Auto CanvasGroupComponent creation
+   - Auto CanvasScaler property setup for dynamic UI structure
+   - Enable / Disable option in Awake
+ 
+
+https://user-images.githubusercontent.com/43708297/215329475-dd1670f2-4649-4f80-ae93-a2dcdc38cb1a.mov
+
+
