@@ -1,6 +1,5 @@
 # Canvas-Components
 - Component based canvas components for settings dynamic UI structure easily
-  -Components
     - Vertical Layout Component
     - Horizontal Layout Component
     - Canvas Component
