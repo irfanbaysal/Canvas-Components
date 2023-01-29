@@ -5,7 +5,8 @@
    - Horizontal Layout Component
    - Canvas Component
    - Canvas Group Component
-     
+ 
+ ## Vertical & Horizontal Layout Components
   - Vertical-Horizontal Layout Group setup and LayoutBuilder build type selection both editor and run time
   - Auto Force Rebuild canvas while rect transform dimention is changed (Adding or removing UI element in this Layout)
   - Modify CanvasGroup, ContentSizeFitter & HorizontalOrVerticalLayoutGroup properties
