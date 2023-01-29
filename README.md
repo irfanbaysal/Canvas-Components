@@ -1,5 +1,11 @@
-# Layout-Components
-- Component based layout setup for dynamic ui structure
+# Canvas-Components
+- Component based canvas components for settings dynamic UI structure easily
+  Components
+   - Vertical Layout Component
+   - Horizontal Layout Component
+   - Canvas Component
+   - Canvas Group Component
+     
   - Vertical-Horizontal Layout Group setup and LayoutBuilder build type selection both editor and run time
   - Auto Force Rebuild canvas while rect transform dimention is changed (Adding or removing UI element in this Layout)
   - Modify CanvasGroup, ContentSizeFitter & HorizontalOrVerticalLayoutGroup properties
