@@ -4,6 +4,9 @@
   - Auto Force Rebuild canvas while rect transform dimention is changed (Adding or removing UI element in this Layout)
   - Modify CanvasGroup, ContentSizeFitter & HorizontalOrVerticalLayoutGroup properties
   - Enable / Disable option in Awake
+  
+  How To : 
+  - Just add HorizontalLayoutComponent or VerticalLayoutComponent in object
 
 https://user-images.githubusercontent.com/43708297/215323549-6ff359ec-22d6-4fa5-af27-d5b7a8799b12.mov
 
