@@ -1,9 +1,25 @@
 # Canvas-Components
 - Component based canvas components for settings dynamic UI structure easily & rapidly. This package includes,
     - Vertical Layout Component
+        - Force Builder Type Selection
+        - Force Canvas Enable/Disable Option
     - Horizontal Layout Component
+        - Force Builder Type Selection
+        - Force Canvas Enable/Disable Option
     - Canvas Component
+        - Auto CanvasGroupComponent creation
+        - Auto CanvasScaler property setup for dynamic UI structure
+        - Enable / Disable option in Awake
     - Canvas Group Component
+        - Auto CanvasGroup creation
+        - Alpha set 
+        - Modify Canvas Group Properties with Flag
+        - Enable / Disable option in Awake
+    - TextMesh UI Component
+        - Text margin set on RectTransformDimensionChange
+        - AutoSize, Wrapping, RaycastTarget set flag 
+        - Font size edit 
+        - Enable / Disable option in Awake
 
 Just add desired component or components in your UI object.
 It is still under development.
