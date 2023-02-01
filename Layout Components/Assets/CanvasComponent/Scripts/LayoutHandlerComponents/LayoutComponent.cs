@@ -41,12 +41,6 @@ namespace Core.Scripts.UI
             base.OnRectTransformDimensionsChange();
             ForceRebuilder();
         }
-
-        protected void SetBuilderType(BuilderType type)
-        {
-            this.builderType = type;
-        }
-
         protected async void ForceRebuilder(BuilderType type = BuilderType.MarkLayoutForRebuild)
         {
             if (type == BuilderType.MarkLayoutForRebuild)
@@ -59,16 +53,24 @@ namespace Core.Scripts.UI
 
             ForceUpdateCanvas();
         }
+        protected void ForceUpdateCanvas()
+        {
+            if(!useForceCanvases)return;
+            Canvas.ForceUpdateCanvases();
+        }
+
+        protected void SetBuilderType(BuilderType type)
+        {
+            this.builderType = type;
+        }
+
+   
 
         protected void EnableLayoutGroup(bool isEnabled)
         {
             LayoutGroup.enabled = isEnabled;
         }
         
-        protected void ForceUpdateCanvas()
-        {
-            if(!useForceCanvases)return;
-            Canvas.ForceUpdateCanvases();
-        }
+
     }
 }

@@ -25,7 +25,6 @@ namespace Core.Scripts.UI
         [SerializeField] private Vector4 margin = Vector4.zero;
         [SerializeField] private float fontSize;
         [SerializeField] private bool isEnableOnStart = true;
-        
         private bool RaycastTarget => flags.HasFlag(TextMeshFlags.RaycastTarget);
         private bool AutoSize => flags.HasFlag(TextMeshFlags.AutoSize);
         private bool Wrapping => flags.HasFlag(TextMeshFlags.Wrapping);
