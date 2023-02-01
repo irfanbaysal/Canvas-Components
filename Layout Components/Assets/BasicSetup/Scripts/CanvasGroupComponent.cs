@@ -16,7 +16,7 @@ namespace Core.Scripts.UI
     {
         [SerializeField] private CanvasGroupFlags properties;
         [SerializeField] private bool enableCanvasGroup=true;
-        [SerializeField][Range(0,1)] private float alpha;
+        [SerializeField][RangeWithDecimal(0,1,1)] private float alpha;
         private bool Interactable => properties.HasFlag(CanvasGroupFlags.Interactable);
         private bool BlockRaycast => properties.HasFlag(CanvasGroupFlags.BlockRaycast);
         private bool IgnoreParent => properties.HasFlag(CanvasGroupFlags.IgnoreParent);
