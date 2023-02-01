@@ -1,11 +1,12 @@
 # Canvas-Components
-- Component based canvas components for settings dynamic UI structure easily
+- Component based canvas components for settings dynamic UI structure easily & rapidly. This package includes,
     - Vertical Layout Component
     - Horizontal Layout Component
     - Canvas Component
     - Canvas Group Component
 
-Just add component in your game object
+Just add desired component or components in your UI object.
+It is still under development.
  
  ## Vertical & Horizontal Layout Components
  
