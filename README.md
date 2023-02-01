@@ -11,6 +11,9 @@
         - Auto CanvasScaler property setup for dynamic UI structure
         - Enable / Disable option in Awake
     - Canvas Group Component
+        - Auto CanvasGroup creation
+        - Modify Canvas Group Properties with Flag
+        - Enable / Disable option in Awake
 
 Just add desired component or components in your UI object.
 It is still under development.
