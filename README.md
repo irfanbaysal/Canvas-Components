@@ -15,6 +15,11 @@
         - Alpha set 
         - Modify Canvas Group Properties with Flag
         - Enable / Disable option in Awake
+    - TextMesh UI Component
+        - Text margin set on RectTransformDimensionChange
+        - AutoSize, Wrapping, RaycastTarget set flag 
+        - Font size edit 
+        - Enable / Disable option in Awake
 
 Just add desired component or components in your UI object.
 It is still under development.
