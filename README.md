@@ -1,8 +1,11 @@
 # Canvas-Components
 - Component based canvas components for settings dynamic UI structure easily & rapidly. This package includes,
     - Vertical Layout Component
-        - Test
+        - Force Builder Type Selection
+        - Force Canvas Enable/Disable Option
     - Horizontal Layout Component
+        - Force Builder Type Selection
+        - Force Canvas Enable/Disable Option
     - Canvas Component
     - Canvas Group Component
 
