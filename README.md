@@ -12,6 +12,7 @@
         - Enable / Disable option in Awake
     - Canvas Group Component
         - Auto CanvasGroup creation
+        - Alpha set 
         - Modify Canvas Group Properties with Flag
         - Enable / Disable option in Awake
 
