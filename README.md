@@ -7,6 +7,9 @@
         - Force Builder Type Selection
         - Force Canvas Enable/Disable Option
     - Canvas Component
+        - Auto CanvasGroupComponent creation
+        - Auto CanvasScaler property setup for dynamic UI structure
+        - Enable / Disable option in Awake
     - Canvas Group Component
 
 Just add desired component or components in your UI object.
