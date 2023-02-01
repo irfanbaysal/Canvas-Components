@@ -16,7 +16,7 @@ namespace Core.Scripts.UI
     }
 
 
-    [RequireComponent(typeof(ContentSizeFitter), typeof(CanvasGroup))]
+    [RequireComponent(typeof(ContentSizeFitter))]
     [DisallowMultipleComponent]
     public class LayoutComponent : UIBehaviour
     {
@@ -26,7 +26,6 @@ namespace Core.Scripts.UI
         [SerializeField] protected bool useForceCanvases = true;
         protected HorizontalOrVerticalLayoutGroup LayoutGroup;
         protected RectTransform RectTransform;
-        protected CanvasGroup CanvasGroup;
         protected ContentSizeFitter ContentSizeFitter => GetComponent<ContentSizeFitter>();
         
         protected override void Awake()
@@ -34,7 +33,6 @@ namespace Core.Scripts.UI
             base.Awake();
             LayoutGroup = GetComponent<HorizontalOrVerticalLayoutGroup>();
             RectTransform = GetComponent<RectTransform>();
-            CanvasGroup = GetComponent<CanvasGroup>();
             EnableLayoutGroup(isEnableOnStart);
         }
 
@@ -60,42 +58,17 @@ namespace Core.Scripts.UI
                 LayoutRebuilder.ForceRebuildLayoutImmediate(RectTransform);
 
             ForceUpdateCanvas();
-            
-            Debug.Log("Dimension Changed");
         }
 
         protected void EnableLayoutGroup(bool isEnabled)
         {
             LayoutGroup.enabled = isEnabled;
         }
-
-        protected void SetCanvasGroupAlpha(float? alpha = null)
-        {
-            CanvasGroup.alpha = alpha ?? 1f;
-        }
-
-        protected void SetCanvasGroupInteractable(bool isInteractable = true)
-        {
-            CanvasGroup.interactable = isInteractable;
-        }
-
-        protected void SetCanvasGroupBlockRaycasts(bool blocksRaycast = true)
-        {
-            CanvasGroup.blocksRaycasts = blocksRaycast;
-        }
-
-        private async void SetLastSibling(RectTransform rectTransform)
-        {
-            await UniTask.Yield(cancellationToken: this.GetCancellationTokenOnDestroy());
-            LayoutRebuilder.MarkLayoutForRebuild(rectTransform);
-            Canvas.ForceUpdateCanvases();
-        }
-
+        
         protected void ForceUpdateCanvas()
         {
             if(!useForceCanvases)return;
             Canvas.ForceUpdateCanvases();
         }
-
     }
 }

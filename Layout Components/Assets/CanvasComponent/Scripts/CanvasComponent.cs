@@ -21,7 +21,7 @@ namespace Core.Scripts.UI
 
         private void OnValidate()
         {
-            SetDynamicUIMode();
+            SetDynamicFitUIMode();
             gameObject.name = GetType().Name;
         }
 
@@ -36,15 +36,13 @@ namespace Core.Scripts.UI
             this.gameObject.SetActive(enableCanvas);
         }
 
-        private void SetDynamicUIMode()
+        private void SetDynamicFitUIMode()
         { 
             if(CanvasScaler ==null) return;
             CanvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             CanvasScaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
             CanvasScaler.referenceResolution = new Vector2(1080f, 1920f);
         }
-
-     
     }
 }
 
