@@ -15,6 +15,7 @@ namespace Core.Scripts.UI
         RaycastTarget = 1 << 1,
         AutoSize = 1 << 2,
         Wrapping = 1 << 3,
+        RichText = 1 << 4,
     }
 
     [RequireComponent(typeof(ContentSizeFitter))]
@@ -28,6 +29,7 @@ namespace Core.Scripts.UI
         private bool RaycastTarget => flags.HasFlag(TextMeshFlags.RaycastTarget);
         private bool AutoSize => flags.HasFlag(TextMeshFlags.AutoSize);
         private bool Wrapping => flags.HasFlag(TextMeshFlags.Wrapping);
+        private bool RichText => flags.HasFlag(TextMeshFlags.RichText);
 
         protected TextMeshProUGUI TextMeshProUGUI =>
             _textMeshProUGUI ? _textMeshProUGUI : (_textMeshProUGUI = GetComponent<TextMeshProUGUI>());
@@ -63,18 +65,17 @@ namespace Core.Scripts.UI
             TextMeshProUGUI.raycastTarget = RaycastTarget;
             TextMeshProUGUI.autoSizeTextContainer = AutoSize;
             TextMeshProUGUI.enableWordWrapping = Wrapping;
+            TextMeshProUGUI.richText = RichText;
         }
 
         protected void SetFontSize()
         {
             TextMeshProUGUI.fontSize = fontSize;
         }
-
         private void SetDefaults()
         {
             SetFontExtras();
             SetFontSize();
         }
     }
-    
 }

@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29dbcaa8ff1294808b6b4c7f0c97b201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flags: 6
+  flags: 20
   margin: {x: 10, y: 0, z: 10, w: 0}
   fontSize: 36
   isEnableOnStart: 1
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 1205078446}
   - component: {fileID: 1205078445}
   m_Layer: 5
-  m_Name: CanvasGroupComponent
+  m_Name: CanvasComponent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
