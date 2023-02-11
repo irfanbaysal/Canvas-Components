@@ -1,4 +1,5 @@
 # Canvas-Components
+- Check out the guide : https://medium.com/@irfanbaysal/creating-dynamic-ui-guide-in-unity-8676d1007dc7
 - Component based canvas components for settings dynamic UI structure easily & rapidly. This package includes,
     - Vertical Layout Component
         - Force Builder Type Selection
